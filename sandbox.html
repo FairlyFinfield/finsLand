@@ -11,10 +11,14 @@
 <div>
 <iframe id="myFrame" width="720" height="420" src="https://fairlyfinfield.github.io/finsLand/" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation">
 
-
-
-
 </iframe>
+
+	<script>
+var iframe = document.getElementById("myFrame");
+var elmnt = iframe.contentWindow.document.getElementsByClassName("disqus-footer__wrapper");
+elmnt.style.display = "none";
+</script>
+	
 </div>
 </body>
 </html>
