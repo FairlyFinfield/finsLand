@@ -345,10 +345,65 @@ var quotes = ["You're awesome." ,
 	</p>
     </div>
     <div class="footer">
-	<p>
-		<h4></h4>
-	</p>
-    </div>	
+	    <h3>Random Quote</h3>
+	    <h5>Wisdom is Power so please help yourself to a random quote.</h5>
+  <button onclick ="newQuote()">Generate Quote</button>
+    <script scr ="javascript.js"></script>
+	<background src = ""></background>
+<br><br> 
+   <div id="quoteDisplay">
+    <!--quotes will display here-->
+  </div>
+  <script>
+var quotes = ["Is there anything, indeed, so discreditable as rashness, and is there anything rasher and more unworthy of the dignity and strength of character of a wise [person] than the holding of a false opinion, or the unhesitating defense of what has not been grasped and realized with proper thoroughness? (Cicero, De Natura Deorum (On the Nature of the Gods), translated by Francis Brooks (London: Methuen, 1896)" ,
+  "As for those who ask to know my own opinion upon each point, they display more curiosity than is necessary, for in discussion it is not so much authorities as determining reasons that should be looked for. In fact the authority of those who stand forward as teachers is generally an obstacle in the way of those who wish to learn, for the latter cease to apply their own judgment, and take for granted the conclusions which they find arrived at by the teacher of whom they approve. (Cicero, De Natura Deorum (On the Nature of the Gods), translated by Francis Brooks (London: Methuen, 1896)",
+  "…to all true sensations there are certain false ones attached, which are so like them that the true ones can show no unmistakable mark by which to be judged and accepted as true. From this comes our conclusion that there are many sensations probably true, by which, though they do not represent full perception, the life of a wise man may be directed because they have something marked and distinct in their appearance. (Cicero, De Natura Deorum (On the Nature of the Gods), translated by Francis Brooks (London: Methuen, 1896)",
+  "Confess your hidden faults. Approach what you find repulsive. Help those you think you cannot help. Anything you are attached to, let it go. Go to the places that scare you. (advice from her teacher to the Tibetan yogini Machik Labdron)",
+  "It is only with the heart that one can see rightly; what is essential is invisible to the eye. (Antoine de Saint-Exupery)",
+  "A human being is a part of the whole called by us “the universe,” a part limited in time and space.  He experiences himself, his thoughts and feelings, as something separate from the rest—a kind of optical delusion of consciousness.  This delusion is a kind of prison for us, restricting us to our personal desires and affection for a few persons nearest to us.  Our task must be to free ourselves from this prison by widening the circle of understanding and compassion to embrace all living creatures and the whole of nature in its beauty. (Albert Einstein)",
+  "Peace between countries must rest on the solid foundation of love between individuals. (Mahatma Gandhi)",
+  "In other traditions demons are expelled externally.  But in my tradition demons are accepted with compassion. (Machik Labdron)",
+  "In joy and sorrow all are equal, thus be guardian of all, as of yourself. (Shantideva)",
+  "To make things as easy as possible to understand, we can summarize the four boundless qualities in the single phrase “a kind heart”.  Just train yourself to have a kind heart always and in all situations. (Patrul Rinpoche)",
+  "Don’t be swayed by external circumstances. (Atisha – mind training slogan)",
+  "It is said that all beings are predisposed to waking up and reaching out to others and that this natural inclination can be nurtured. (Pema Chodron)",
+  "The secret of life that we are all looking for is just this: to develop through sitting and daily life practice the power and courage to return to that which we have spent a lifetime hiding from, to rest in the bodly experience of the present moment—even if it is a feeling of being humiliated, of failing, of abandonment, of unfairness. (Charlotte Joko Beck)",
+  "Everybody loves something, even if it’s only tortillas. (Trungpa Rinpoche)",
+  "I am always doing things I can’t do. That is how I get to do them. (Pablo Picasso)",
+  "It is not what we take up, but what we give up, that makes us rich. (Henry Ward Beecher)",
+  "You can do anything, but not everything. (David Allen)",
+  "Thinking will not overcome fear but action will. (W. Clement Stone)",
+  "We read the world wrong and say that it deceives us. (Rabindranth Tagore)",
+  "You miss 100 percent of the shots you never take. (Wayne Gretzky)",
+  "He is the happiest, be he king or peasant, who finds peace in his home. (Johann Wolfgang von Goethe)",
+  "Your work is to discover your work and then, with all your heart, to give yourself to it. (Buddha)",
+  "In order to be effective, truth must penetrate like an arrow – and that is likely to hurt. (Wei Wu Wei)",
+  "You must be the change you wish to see in the world. (Gandhi)",
+  "The world makes way for the [person] who knows where [they are] going. (Ralph Waldo Emerson)",
+  "What may be done at any time will be done at no time. (Scottish Proverb)",
+  "If your business keeps you so busy that you have no time for anything else, there must be something wrong either with you or with your business. (William J. H. Boetcker)",
+  "If your ship doesn’t come in, swim out to meet it! (Jonathan Winters)",
+  "The only thing that saves us from bureaucracy is its inefficiency. (Eugene McCarthy)",
+  "We are what we repeatedly do; excellence, then, is not an act but a habit. (Aristotle)",
+  "You will not do incredible things without an incredible dream. (John Eliot)",
+  "Courage is a kind of salvation. (Plato)",
+  "Believe those who are seeking the truth. Doubt those who find it. (André Gide)",
+  "Live a good life. If there are gods and they are just, they will not care how devout you have been, but will welcome you based on the virtues you have lived by. If there are gods, but unjust, then you should not want to worship them. If there are no gods, then you will be gone, but will have lived a noble life that will live on in the memories of your loved ones. (Marcus Aurelius)",
+  "The more you loose yourself in something bigger than yourself, the more energy you will have. (Norman Vincent Peale)",
+  "They who have no patience have nothing. (Italian Proverb)",
+  "What we think, or what we know, or what we believe is, in the end, of little consequence. The only consequence is what we do. (John Ruskin)",
+  "Don’t ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive. (Howard Thurman)",
+  "Everything that irritates us about others can lead us to an understanding of ourselves. (Carl Jung)",
+  "As a well-spent day brings happy sleep, so a life well spent brings happy death. (Leonardo da Vinci)",
+  "Money isn’t the most important thing in life, but it’s reasonably close to oxygen on the ‘gotta have it’ scale. (Zig Ziglar)",
+  "Dig the well before you are thirsty (Old Proverb)",]
+      
+function newQuote() {     
+ var randomNumber = Math.floor(Math.random() * (quotes.length));
+ document.getElementById('quoteDisplay') .innerHTML = quotes[randomNumber]; 
+}
+</script>
+
     <div class="note">
 	    <p></p>
     </div>
