@@ -147,17 +147,17 @@ p {
   <h3>Random Compliment Generator</h3>
 	    <h5>Please help yourself to a random compliment crafted just for you...:)</h5>
 
-  <button onclick ="newQuote()">Get a Compliment</button>
+  <button onclick ="newCompliment()">Get a Compliment</button>
       <script scr ="javascript.js"></script>
   <background src = ""></background>
 <br><br> 
-   <div id="quoteDisplay">
-    <!--quotes will display here-->
+   <div id="complimentDisplay">
+    <!--compliments will display here-->
   </div>
   
 <script>
 
-var quotes = ["You're awesome." ,
+var compliments = ["You're awesome." ,
   "Your eyes are sufficently moist and you don't smell or anything." ,
     "Even if you were cloned, you'd still be one of a kind. And the better looking of the two." ,
       "I would love to spend every minute of every day with you, but some days I actually have to get stuff done." ,
@@ -329,9 +329,9 @@ var quotes = ["You're awesome." ,
   "Your every thought and motion contributes to the beauty of the universe." ,
   "I like you enough that if you cooked something really gross, I would tell you instead of just eating it." ,]
       
- function newQuote() {     
+ function newCompliment() {     
  var randomNumber = Math.floor(Math.random() * (quotes.length));
- document.getElementById('quoteDisplay') .innerHTML = quotes[randomNumber]; }
+ document.getElementById('commentDisplay') .innerHTML = compliments[randomNumber]; }
 
 </script>
 	</div>
@@ -346,7 +346,7 @@ var quotes = ["You're awesome." ,
     </div>
     <div class="footer">
 	    <h3>Random Quote</h3>
-	    <h5>Wisdom is Power so please help yourself to a random quote.</h5>
+	    <h5>Wisdom is Power, so please help yourself to a random wise quote.</h5>
   <button onclick ="newQuote()">Generate Quote</button>
     <script scr ="javascript.js"></script>
 	<background src = ""></background>
